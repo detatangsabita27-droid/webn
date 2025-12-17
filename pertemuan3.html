@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Document</title>
+    <style>
+        .container {
+            margin-left: auto;
+            margin-right: auto;
+
+            max-width: 1400px;
+            padding-left: 20rem;
+            padding-right: 20rem;
+            box-sizing: border-box;
+            background: linear-gradient(to right, blue, cyan, grey);
+        }
+
+        .border {
+            border: 1px solid;
+        }
+
+        .border-black {
+            border-color: black;
+        }
+
+        .border-red {
+            border-color: red;
+        }
+
+        .border-blue {
+            border-color: blue;
+        }
+
+        .border-green {
+            border-color: green;
+        }
+  
+        .rounded-1{
+            border-radius: 4px;
+        }
+
+        .rounded-2{
+            border-radius: 8px;
+        }
+
+        .rounded-3{
+            border-radius: 16px;
+        }
+
+        .row::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .colum {
+            float: left;
+            box-sizing: border-box;
+        }
+
+        .w-1 {
+            width: 25%;w
+        }
+
+        .w-2 {
+            width: 75%;
+        }
+
+        .h-full {
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row border border-blue" >header</div>
+        <div  class="row border border-red">
+            <div class="colum border border-blue w-1 h-full " >sidebar</div>
+            <div class="colum border border-black w-2" >
+                <form>
+                    <div>
+                      <label for="name">Nama:</label>
+                      <input type="text" id="name" name="name"/>
+                    </div>
+                    <div>
+                        <label for="password">Password:</label>
+                      <input type="password" id="password" name="password"/> 
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="border border-blue">footer</div>
+    </div>
+</body>
+</html>
