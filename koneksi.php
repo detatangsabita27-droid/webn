@@ -1,6 +1,6 @@
 <?php
 
-$server   = "localhost"; // Alamat host database xampp
+$server   = "localhost"; // Alamat host database xampp control
 $user     = "root";     // User default xampp
 $pass     = "";         // Password user root
 $db_name  = "db_mahasiswa";
